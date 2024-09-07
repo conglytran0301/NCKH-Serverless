@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ct = custom */
+/* tqd = trungquandev */
+.tqd-topmenu-expanded {
+  @apply absolute top-10 z-50 w-full text-center bg-white animate-slideDown;
+}
+
+.tqd-top-menu-item {
+  @apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-coffee-200 after:lg:h-0.5 after:lg:w-0 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
+}
+.tqd-top-menu-item-active {
+  @apply text-gray-800;
+}
+
+.tqd-icon {
+  @apply w-5 h-5 inline-block;
+}
+
+.tqd-badge-circle {
+  @apply text-xs text-center rounded-full px-1.5;
+}
+
+.tqd-subheadline {
+  @apply flex justify-center items-center my-16;
+}
+.tqd-subheadline-deco-line {
+  @apply w-8 h-px bg-gray-200;
+}
+.tqd-subheadline-label {
+  @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-xs text-center;
+}
+
+.tqd-button {
+  @apply text-center uppercase tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-95;
+}
+
+#root {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* ... */
+  perspective: 2px;
+}
+.tqd-parallax,
+.tqd-no-parallax {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.tqd-parallax {
+  height: 40vh;
+  position: relative;
+  z-index: -1;
+}
+.tqd-no-parallax {
+  height: auto;
+  z-index: 999;
+  background: white;
+}
+.tqd-parallax-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* ... */
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+@media screen(xl) {
+  .tqd-parallax {
+    height: 70vh;
+    transform-style: preserve-3d;
+  }
+  .tqd-parallax-image {
+    transform: translateZ(-1px) scale(1.5);
+  }
+}
