@@ -1,5 +1,6 @@
 //Khoi tao danh sach san pham
 function createProduct() {
+    localStorage.removeItem('products');
     if (localStorage.getItem('products') == null) {
         let products = [{
             id: 1,

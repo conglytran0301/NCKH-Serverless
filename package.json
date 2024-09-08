@@ -1,7 +1,7 @@
 {
   "name": "tailwindcss-coffee-style",
   "version": "1.0.0",
-  "description": "trungquandev.com",
+  "description": "conglytran0301",
   "main": "index.js",
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
