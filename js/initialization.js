@@ -70,7 +70,7 @@ function createProduct() {
             id: 8,
             status: 1, 
             title: 'Tết Ở Làng Địa Ngục',
-            img: './assets/img/products/tet-o-lang-dia-nguc.png',
+            img: './assets/img/products/tet-o-lang-dia-nguc.jpg',
             category: 'Văn học',
             price: 169000,
             desc: '"Tết Ở Làng Địa Ngục" của Thảo Trang là một tác phẩm kinh dị Việt Nam lấy bối cảnh một ngôi làng xa xôi, nơi người dân sống trong sợ hãi về quá khứ tội lỗi. Vào đêm cuối năm, ông Thập nhận điềm báo từ một âm hồn mặc quan phục đỏ, báo hiệu tai ương sắp đến. Ngôi làng, vốn là hậu duệ của băng cướp Truông Nhà Hồ, đối diện với thế lực siêu nhiên và bi kịch trong dịp Tết. Câu chuyện đậm chất huyền bí và rùng rợn, để lại dư âm khó phai khi gấp sách lại.'
@@ -567,7 +567,7 @@ function createProduct() {
 
 // Create admin account 
 function createAdminAccount() {
-    localStorage.removeItem('accounts');
+    /*localStorage.removeItem('accounts');*/
     let accounts = localStorage.getItem("accounts");
     if (!accounts) {
         accounts = [];
