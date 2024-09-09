@@ -1,37 +1,23 @@
 {
-  "name": "tailwindcss-coffee-style",
+  "name": "fcj-serverless-coffee-style",
   "version": "1.0.0",
-  "description": "conglytran0301",
-  "main": "index.js",
-  "scripts": {
-    "build:css": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
-    "start:dev": "live-server public"
-  },
-  "keywords": [],
-  "author": "Ly Tran",
-  "license": "ISC",
-  "devDependencies": {
-    "live-server": "^1.2.1",
-    "tailwindcss": "^3.0.23"
-  }
-}
-
-{
-  "name": "fcj-serverless",
-  "version": "1.0.0",
-  "description": "Host a website on any hosting Platform.\r      Configure it to use AWS Cognito\r      Configure API Gateway to integrate with AWS Cognito, to serve the content only to the Authenticated user.\r      Send an email to the developer, if the API is involed using SNS.",
+  "description": "Host a website on any hosting platform with TailwindCSS styling. Configure it to use AWS Cognito, API Gateway, and SNS to send emails when APIs are invoked.",
   "main": "main.js",
   "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
+    "start:dev": "live-server public",
     "build": "react-scripts build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ly Tran",
   "license": "ISC",
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "tailwindcss": "^3.0.23"
   }
 }
-
-
