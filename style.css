@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 100px 0;
+    background: linear-gradient(to bottom, rgb(20, 161, 204), rgb(2, 2, 2));
+}
+section::before
+{
+    content: 'Ly Tran';
+    position: absolute;
+    font-size: 10vw;
+    color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    margin-top: 20vh;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+.content .imgBx
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content .imgBx img
+{
+    max-width: 100%;
+    max-height: 370px;
+}
+.content .text
+{
+    max-width: 700px;
+    margin-top: 20px;
+}
+.content .text h2
+{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.content .text p
+{
+    color: #fff;
+    text-align: justify;
+}
+.content .text a
+{
+    display: inline-block;
+    padding: 10px 0;
+    color: #111;
+    width: 150px;
+    text-align: center;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+.sci
+{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    bottom: 50px;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: invert(1);
+}
+
+.sci-small{
+    height: 2em;
+    width: 2em;
+}
+
+.sci li
+{
+    list-style: none;
+}
+.sci li a
+{
+    display: block;
+    transform: scale(0.7);
+}
+@media (max-width: 767px)
+{
+    section
+    {
+        padding: 40px;
+        overflow-x: hidden;
+    }
+    section::before
+    {
+        font-size: 20vh;
+        left: 50%;
+        margin-top: 20vh;
+        transform: translateX(-50%);
+    }
+    .content
+    {
+        margin-top: 120px;
+    }
+    .sci
+    {
+        margin-top: 80px;
+        position: relative;
+        bottom: 0px;
+        right: initial;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        filter: invert(1);
+    }
+    .sci li
+    {
+        margin-right: 15px;
+    }
+}
+
+/*-----------------------------------list TV------------------------------*/
+/*hover card*/
+/* Container needed to position the overlay. Adjust the width as needed */
+.card-student-style {
+    background-color: #f8f8f8;
+  }
+  
+  .studentCard {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Make the image to responsive */
+  .image-student-hover {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* The overlay effect - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.6); /* Black see-through */
+    width: 100%;
+    transition: 0.8s ease;
+    opacity: 0;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  /* When you mouse over the card, fade in the overlay title */
+  .card-student-style:hover .overlay {
+    opacity: 1;
+  }
+  
+  /*title section*/
+  .listStudent {
+    margin: 100px auto;
+  }
+  
+  /*Card DS BĐH*/
+  .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .studentCard {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .studentCard img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .studentCard:hover img {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+    opacity: 0;
+    padding: 1rem;
+  }
+  
+  .studentCard:hover .overlay {
+    opacity: 1;
+  }
+  
+  .btn-primary {
+    background-color: #991487;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #991487;
+  }
+  
+  .d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .text-dark {
+    color: #020303 !important;
+  }
+  
+  .fa-3x {
+    font-size: 3em;
+  }
+  
+  .mr-3 {
+    margin-right: 1rem !important;
+  }
+  
+  .carousel-inner {
+    display: flex;
+  }
+  
+  .carousel-item {
+    transition: transform 0.5s ease;
+  }
+  
+  .style-indicators li {
+    background-color: #991487; /* nút chuyển trang chia sẻ BDH*/
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  .title-card-style {
+    background-color: #991487;
+    color: #fff;
+    border-radius: 15px;
+  }
+  
+  .img-hover-zoom {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-student-hover {
+    transition: transform 0.5s ease;
+  }
+  
+  .image-student-hover:hover {
+    transform: scale(1.1);
+  }
+  
+

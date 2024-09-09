@@ -1,6 +1,6 @@
 //Khoi tao danh sach san pham
 function createProduct() {
-    localStorage.removeItem('products');
+    /*localStorage.removeItem('products');*/
     if (localStorage.getItem('products') == null) {
         let products = [{
             id: 1,
@@ -218,348 +218,348 @@ function createProduct() {
             id: 24,
             status: 1, 
             title: 'Anders Sát Thủ Cùng Bè Lũ',
-            img: './assets/img/products/set_ca_tam.jpg',
+            img: '',
             category: 'Văn học',
             price: 950000,
-            desc: 'Một 1 set với 3 món ngon mỹ mãn đủ 4 người ăn no, bếp trưởng tự tay chọn từng con cá tầm tươi đủ chất lượng để chế biến đủ 3 món gỏi, nướng, canh chua 10 điểm cho chất lượng.'
+            desc: 'Dưới Khung Trời Ngát Xanh'
         },
         {
             id: 25,
             status: 1, 
-            title: 'Chả ốc 1 phần',
-            img: './assets/img/products/cha_oc_1_phan.jpeg',
+            title: 'Dưới Khung Trời Ngát Xanh',
+            img: '',
             category: 'Văn học',
             price: 350000,
-            desc: 'Chả ốc với ốc giòn tan, băm rối, trộn với thịt, lá lốt, rau thơm, nêm nếm vừa ăn và viên tròn, chiên cho giòn ngoài mềm trong. Ăn chả ốc kẹp với rau sống và chấm mắm chua ngọt cực kỳ đưa vị.'
+            desc: ''
         },
 
         {
             id: 26,
             status: 1, 
-            title: 'Gà ủ muối thảo mộc (1 con)',
+            title: '',
             category: 'Văn học',
-            img: './assets/img/products/ga-u-muoi-thao-moc.png',
+            img: '',
             price: 450000,
-            desc: 'Gà ủ muối tuyển chọn từ gà ri tươi, ủ muối chín tới với gia vị thảo mộc tự nhiên, da gà mỏng, thịt chắc ngọt.'
+            desc: ''
         },
 
         {
             id: 27,
             status: 1, 
-            title: 'Gà không lối thoát (1 con)',
+            title: '',
             category: 'Văn học',
-            img: './assets/img/products/ga-khong-loi-thoat.png',
+            img: '',
             price: 520000,
-            desc: 'Gà mái ghẹ size 1.4kg sơ chế sạch sẽ, tẩm ướp gia vị đậm đà, bọc vào trong xôi dẻo từ nếp cái hoa vàng, chiên cho giòn mặt ngoài. Khi ăn cắt phần xôi là gà thơm ngon nghi ngút khói, thịt gà ngấm mềm thơm, miếng xôi ngọt tự nhiên từ thịt gà ăn cực kỳ hấp dẫn.'
+            desc: ''
         },
 
         {
             id: 28,
             status: 1, 
-            title: 'Cá chiên giòn mắm Thái (1 con)',
+            title: '',
             category: 'Văn học',
-            img: './assets/img/products/ca-chien-gion-mam-thai.jpeg',
+            img: '',
             price: 350000,
-            desc: 'Cá tươi bếp làm sạch, lạng đôi, ướp cho ngấm và chiên vàng giòn. Thịt cá bên trong óng ánh nước, mềm ngọt, bên ngoài giòn tan hấp dẫn. Thêm sốt mắm Thái đầu bếp làm công thức riêng, vị mắm chua ngọt cay the cực kỳ hợp với cá giòn nóng hổi.'
+            desc: ''
         },
 
         {
             id: 29,
             status: 1, 
-            title: 'Chân giò chiên giòn mắm Thái',
+            title: '',
             category: 'Văn học',
-            img: './assets/img/products/chan-gio-chien-gion-mam-thai.jpeg',
+            img: '',
             price: 420000,
-            desc: 'Chân giò lợn đen chọn loại ngon, tỉ lệ nạc mỡ đều đặn, bếp xâm bì cẩn thận và ướp thật ngon, chiên vàng giòn nổi bóng, khi ăn chấm mắm chua ngọt cay cay cực kỳ ngon miệng.'
+            desc: ''
         },
 
         {
             id: 30,
             status: 1, 
-            title: 'Chả cốm (500gr)',
+            title: '',
             category: 'Văn học',
-            img: './assets/img/products/cha-com.png',
+            img: '',
             price: 175000,
-            desc: 'Cốm mộc làng Vòng hạt dẹt dẻo và thơm đặc biệt, thịt lợn tươi phải chọn phần thịt vai xay vừa mềm lại không bở, trộn đều với cốm, nêm với mắm ngon, gia vị đơn giản và quật hỗn hợp thịt xay và cốm đến khi nào thật chắc và dẻo. Viên mỗi bánh chả phải đều tay, hấp sơ qua cho thành hình, khi ăn mới chiên vàng. Chả cốm khi cắn vào phải giòn và lại thật mềm, tứa nước trong miệng. Cốm dẻo dẻo cuộn trong thịt thơm ngon lạ kỳ.'
+            desc: ''
         },
 
         {
             id: 31,
             status: 1, 
-            title: 'Vịt om sấu (1 hộp)',
+            title: '',
             category: 'Văn học',
-            img: './assets/img/products/vit-om-sau.jpeg',
+            img: '',
             price: 350000,
-            desc: '[Mỗi phần có 1,2kg thịt vịt]. Vịt om sấu với thịt vịt mềm thơm, nấu với trái sấu, sả cây, ớt tươi cho ra phần nước om chua thanh và rất thơm. Dùng vịt om sấu với rau mùi tàu, rau thơm và bún rất ngon.'
+            desc: ''
         },
 
         {
             id: 32,
             status: 1, 
-            title: 'Giò xào (1kg)',
+            title: '',
             category: 'Văn học',
-            img: './assets/img/products/gio-xao.jpeg',
+            img: '',
             price: 460000,
-            desc: 'Giò xào Bếp Hoa đặc biệt được xào khô, ép chặt để tạo độ giòn. Nguyên liệu chính được làm từ tai và lưỡi heo. Khi ăn giò xào, bạn sẽ cảm nhận từng miếng giò vừa giòn vừa thơm lừng mùi tiêu đen và nước mắm.'
+            desc: ''
         },
 
         {
             id: 33,
             status: 1, 
-            title: 'Nem tai (1 hộp)',
+            title: '',
             category: 'Văn học',
-            img: './assets/img/products/nem-tai.jpeg',
+            img: '',
             price: 200000,
-            desc: 'Nem tai giòn sần sật, trộn với thính gạo rang thơm, ăn kèm lá sung bùi bùi, chấm tương ớt hoặc nước chấm đặc điệt, công thức chỉ riêng Bếp Hoa có.'
+            desc: ''
         },
 
         {
             id: 34,
             status: 1, 
-            title: 'Canh dưa bò hầm (1 hộp)',
+            title: '',
             category: 'Văn học',
-            img: './assets/img/products/canh-dua-bo-ham.jpeg',
+            img: '',
             price: 270000,
-            desc: 'Canh dưa chua hầm nhừ với thịt nạm bò và gân bò. Thơm - ngon - ngọt - béo - chua dịu thanh thanh'
+            desc: ''
         },
 
         {
             id: 35,
             status: 1, 
-            title: 'Nạc nọng heo nướng kèm xôi trắng (500gr)',
+            title: '',
             category: 'Văn học',
-            img: './assets/img/products/nac-nong-heo-nuong-kem-xoi-trang.jpeg',
+            img: '',
             price: 300000,
-            desc: 'Nọng heo - phần thịt ngon nhất trên thủ heo, với những dải thịt nạc mỡ đan xen, mỗi thủ chỉ có được 1-2kg thịt nọng ngon mềm như vậy. Bếp trưởng Bếp Hoa tẩm ướp thật ngấm gia vị, nướng thẳng trên than hoa thơm nức, xém cạnh đẹp mắt. Miếng thịt nướng xong gắp khỏi vỉ vẫn thấy mỡ thơm còn sôi trên dải thịt, để thịt nghỉ vài phút khi thái ra óng ánh nước, gắp miếng thịt chấm với nước sốt siêu ngon độc quyền của Bếp, ngon đến tứa nước miếng, tranh nhau gắp sạch đĩa'
+            desc: ''
         },
 
         {
             id: 36,
             status: 1, 
-            title: 'Thịt quay (400gr)',
+            title: '',
             category: 'Văn học',
-            img: './assets/img/products/thit-quay.jpeg',
+            img: '',
             price: 280000,
-            desc: 'Thịt lợn quay thơm mùi lá mắc mật. Ngoài bì giòn rụm, thịt bên trong mềm, hương vị đậm đà. Đặc biệt, bếp có loại sốt chấm thịt được pha bằng công thức riêng biệt chỉ Bếp Hoa mới có.Hướng dẫn sử dụng: Sử dụng ngay trong ngày. Bảo quản trong tủ mát.'
+            desc: ''
         },
 
         {
             id: 37,
             status: 1, 
-            title: 'Khâu nhục',
+            title: '',
             category: 'Văn học',
-            img: './assets/img/products/khau-nhuc.jpeg',
+            img: '',
             price: 280000,
-            desc: 'Khâu nhục - món ăn cầu kỳ mang phong vị phương Bắc. Làm từ thịt lợn ta, khâu khục được hấp cách thủy trong 6 tiếng cùng với rất nhiều loại gia vị. Thịt mềm nhừ, ngọt vị, phần bì trong và dẻo quẹo. Mỡ ngậy ngậy tan chảy ngay khi vừa đưa lên miệng. Hướng dẫn bảo quản: Hâm nóng lại bằng nồi hấp cách thủy hoặc lò vi sóng. Bảo quản trong tủ mát từ 3-5 ngày.'
+            desc: ''
         },
         {
             id: 38,
             status: 1, 
-            title: 'Xíu mại tôm thịt ( 10 viên)',
+            title: '',
             category: 'Văn học',
-            img: './assets/img/products/ha_cao_tom_thit.jpg',
+            img: '',
             price: 140000,
-            desc: 'Những miếng há cảo, sủi cảo, hoành thánh với phần nhân tôm, sò điệp, hải sản tươi ngon hay nhân thịt heo thơm ngậy chắc chắn sẽ khiến bất kỳ ai thưởng thức đều cảm thấy rất ngon miệng.'
+            desc: ''
         },
         {
             id: 39,
             status: 1, 
-            title: 'Chè hương cốm lá dứa',
+            title: '',
             category: 'Món tráng miệng',
-            img: './assets/img/products/che-com-la-dua.jpeg',
+            img: '',
             price: 60000,
-            desc: 'Chè cốm hương lá dứa dẻo thơm, ngọt dịu, từng hạt cốm thoảng thoảng đâu đó hương lá dứa mát lành'
+            desc: ''
         },
 
         {
             id: 40,
             status: 1, 
-            title: 'Bánh bông lan chanh dây',
+            title: '',
             category: 'Món tráng miệng',
-            img: './assets/img/products/banh-bong-lan-chanh-day.jpeg',
+            img: '',
             price: 50000,
-            desc: 'Bánh bông lan chanh dây với vị chua nhẹ, không bị ngọt gắt hẳn sẽ là sự lựa chọn hoàn hảo'
+            desc: ''
         },
 
         {
             id: 41,
             status: 1, 
-            title: 'Chè bưởi',
+            title: '',
             category: 'Món tráng miệng',
-            img: './assets/img/products/che-buoi.jpeg',
+            img: '',
             price: 50000,
-            desc: 'Chè bưởi rất dễ ăn bởi hương vị ngọt mát, thơm ngon, vị bùi bùi của đậu xanh, giòn sần sật của cùi bưởi mà không hề bị đắng'
+            desc: ''
         },
         {
             id: 42,
             status: 1, 
-            title: 'Set lẩu Thái tomyum',
+            title: '',
             category: "Món lẩu",
-            img: './assets/img/products/lau-thai-tomyum.jpeg',
+            img: '',
             price: 699000,
-            desc: 'Lẩu Thái là món ăn xuất phát từ món canh chua Tom yum nổi tiếng của Thái Lan. Nước lẩu có hương vị chua chua cay cay đặc trưng. Các món nhúng lẩu gồn thịt bò, hải sản, rau xanh và các loại nấm.',
+            desc: '',
         },
         {
             id: 43,
             status: 1, 
-            title: 'Set lẩu Thái nấm chay',
+            title: '',
             category: "Món lẩu",
-            img: './assets/img/products/lau-thai-nam-chay.png',
+            img: '',
             price: 550000,
-            desc: 'Một set lẩu Thái nấm chay với nước dùng 100% từ rau củ quả tự nhiên, thêm sả cây tươi, riềng miếng, ớt, nước dừa để lên được vị nước lẩu Thái chuẩn vị. Đồ nhúng đa dạng với nhiều loại nấm khác nhau, rau tươi giòn, đậu phụ mềm xốp, váng đậu amla chiên giòn. Kèm bún tươi ăn rất hợp.',
+            desc: '',
         },
         {
             id: 44,
             status: 1, 
-            title: 'Đậu hũ xào nấm chay',
+            title: '',
             category: "Món chay",
-            img: './assets/img/products/dau-hu-xao-nam-chay.png',
+            img: '',
             price: 220000,
-            desc: 'Món xào thanh nhẹ ngọt lịm từ rau củ và nấm tươi, thêm chút đậu phụ chiên thái miếng, nêm nếm đậm đà. Ăn kèm cơm trắng hay làm bún trộn rau củ cũng rất hợp.',
+            desc: '',
         },
         {
             id: 45,
             status: 1, 
-            title: 'Bún trộn chay (1 suất)',
+            title: '',
             category: "Món chay",
-            img: './assets/img/products/bun-tron-chay.png',
+            img: 'g',
             price: 75000,
-            desc: 'Bún trộn chay tưởng là quen mà ăn ngon lạ miệng. Với bún tươi được trộn với nước tương và sốt ớt đặc biệt, mắm chay thơm, thêm rau củ tươi, rau thơm bắt vị, nấm xào săn, đậu phụ thái lát, một món thanh nhẹ thích hợp ăn trưa hoặc để dành cho anh chị eat-clean bữa tối.',
+            desc: '',
         },
         {
             id: 46,
             status: 1, 
-            title: 'Bún riêu chay (1 suất)',
+            title: '',
             category: "Món chay",
-            img: './assets/img/products/bun-rieu-chay.png',
+            img: '',
             price: 75000,
-            desc: 'Bún riêu chay với phần gạch cua chay từ đậu phụ non mềm đánh với sốt màu thơm ngon. Nước dùng thanh nhẹ từ rau củ quả, được nấu lên vị đậm đà rất ngon miệng. Một phần bún riêu kèm với gạch cua là giò chay, đậu phụ rán, rau sống ngọt giòn và tương ớt chay sánh ngon.',
+            desc: '',
         },
         {
             id: 47,
             status: 1, 
-            title: 'Miến xào rau củ chay',
+            title: '',
             category: "Món chay",
-            img: './assets/img/products/mien-xao-rau-cu-chay.png',
+            img: '',
             price: 170000,
-            desc: 'Sợi miến khoai lang bếp ngâm cho mềm, xào kèm rau củ quả tươi theo mùa, nêm cùng nước tương và dầu mè, một món xào chay vừa mát lành lại thơm ngon.',
+            desc: '',
         },
         {
             id: 48,
             status: 1, 
-            title: 'Cuốn nấm chay (10 cuốn)',
+            title: '',
             category: "Món chay",
-            img: './assets/img/products/cuon-nam-chay.png',
+            img: '',
             price: 120000,
-            desc: 'Nấm tươi làm chín cuộn với bánh phở và rau bào, thêm đậu phụ chiên giòn thái chân hương đưa vị, chấm mắm chua ngọt chay bếp trưởng pha chế, một món ngon làm món khai vị rất hợp.',
+            desc: '',
         },
         {
             id: 49,
             status: 1, 
-            title: 'Xôi xéo',
+            title: '',
             category: "Món chay",
-            img: './assets/img/products/xoi-xeo.png',
+            img: '',
             price: 80000,
-            desc: 'Xôi xéo đậu xanh bếp dùng nếp cái hoa vàng hạt mẩy, ngâm với nước nghệ và đồ 2 lần cho hạt nếp chín mềm và thơm, đậu xanh sên mịn cắt tơi trộn cùng xôi, khi ăn rắc hành phi đưa vị, rất hấp dẫn.',
+            desc: '',
         },
         {
             id: 50,
             status: 1, 
-            title: 'Chả quế chay',
+            title: '',
             category: "Món chay",
-            img: './assets/img/products/cha-que-chay.png',
+            img: '',
             price: 70000,
             desc: '',
         },
         {
             id: 51,
             status: 1, 
-            title: 'Nem chay',
+            title: '',
             category: "Món chay",
-            img: './assets/img/products/nem-chay.png',
+            img: '',
             price: 160000,
-            desc: 'Nem chay thơm ngon, thanh thuần bếp trưởng sử dụng rau củ bào tươi, đậu xanh, khoai môn, miến, mộc nhĩ và nấm hương, tất cả xào thơm cho lên vị, sau đó cuộn với bánh đa nem mỏng, chiên giòn vỏ, chấm mắm chua ngọt chay ăn kèm rau thơm rất hấp dẫn.',
+            desc: '',
         },
         {
             id: 52,
             status: 1, 
-            title: 'Bánh tráng trộn',
+            title: '',
             category: "Món ăn vặt",
-            img: './assets/img/products/banh-trang-tron.jpg',
+            img: '',
             price: 20000,
-            desc: 'Bánh tráng trộn là món ăn ngon không chỉ nổi danh đất Sài Thành mà ngay khi xuất hiện tại Hà Nội, nó cũng đã trở thành món ăn “hot trend” rất được giới trẻ yêu thích. ',
+            desc: '',
         },
         {
             id: 53,
             status: 1, 
-            title: 'Bánh tráng nướng',
+            title: '',
             category: "Món ăn vặt",
-            img: './assets/img/products/banh-trang-nuong.jpg',
+            img: '',
             price: 10000,
-            desc: 'Khác với món bánh tráng trộn, bánh tráng nướng được phết một lớp trứng chút lên bề mặt bánh tráng cùng thịt băm, mỡ hành, nướng đến khi có màu vàng ruộm. ',
+            desc: ' ',
         },
         {
             id: 54,
             status: 1, 
-            title: 'Ốc thập cẩm (1 suất)',
-            category: "Món ăn vặt",
-            img: './assets/img/products/oc-thap-cam.jpg',
+            title: '',
+            category: "",
+            img: '',
             price: 50000,
-            desc: 'Được chế biến đủ các món ốc ngon khác nhau, như: ốc hấp, ốc luộc, ốc xào, ốc bỏ lò,.. với đủ các gia vị như tỏi, hành, ớt, tiêu, rau răm,…',
+            desc: '',
         },
         {
             id: 55,
             status: 1, 
-            title: 'Cơm cháy chà bông',
+            title: '',
             category: "Món ăn vặt",
-            img: './assets/img/products/com-chay-cha-bong.jpg',
+            img: '',
             price: 60000,
-            desc: 'Cơm cháy chà bông có thể bảo quản cả tháng mà ăn vẫn ngon và đóng gói rất tiện.',
+            desc: '',
         },
         {
             id: 56,
             status: 1, 
-            title: 'Phá lấu (1 suất)',
+            title: '',
             category: "Món ăn vặt",
-            img: './assets/img/products/pha-lau.jpg',
+            img: '',
             price: 99000,
-            desc: 'Cứ mỗi lần hỏi “Ăn gì ở Sài Gòn ngon, rẻ ?” là người ta nhớ ngay món phá lấu.',
+            desc: '',
         },
         {
             id: 57,
             status: 1, 
-            title: 'Bột chiên (1 suất)',
+            title: '',
             category: "Món ăn vặt",
-            img: './assets/img/products/bot-chien.jpg',
+            img: '',
             price: 49000,
-            desc: 'Cùng với nước chấm đặc biệt, bột chiên để lại hương vị khó tả cho thực khách sau khi thưởng thức.',
+            desc: '',
         },
         {
             id: 58,
             status: 1, 
-            title: 'Gỏi khô bò (1 suất)',
+            title: '',
             category: "Món ăn vặt",
-            img: './assets/img/products/goi-bo-kho.jpg',
+            img: '',
             price: 60000,
-            desc: 'Thơm ngon đến từng sợi bò.',
+            desc: '',
         },
         {
             id: 59,
             status: 1, 
-            title: 'Hoành thánh tôm (10 viên)',
-            img: './assets/img/products/hoanh_thanh.jpg',
+            title: '',
+            img: '',
             category: 'Món mặn',
             price: 130000,
-            desc: 'Những miếng há cảo, sủi cảo, hoành thánh với phần nhân tôm, sò điệp, hải sản tươi ngon hay nhân thịt heo thơm ngậy chắc chắn sẽ khiến bất kỳ ai thưởng thức đều cảm thấy rất ngon miệng.'
+            desc: ''
         },
         {
             id: 60,
             status: 1, 
-            title: 'Nước ép dâu tây',
-            img: './assets/img/products/nuoc-ep-dau-tay.jpg',
+            title: '',
+            img: '',
             category: 'Nước uống',
             price: 100000,
-            desc: 'Dâu tây ăn nguyên quả ngon ngọt, có cả quả dôn dốt chua, màu đỏ mọng trông cực yêu. Không chỉ ngon miệng mà đồ uống từ dâu tây còn có công dụng bảo vệ sức khỏe, sáng mắt, đẹp da, thon gọn vóc dáng. Làm giảm nguy cơ mắc bệnh về mỡ máu, chống viêm,…'
+            desc: ''
         },
         ]
         localStorage.setItem('products', JSON.stringify(products));
