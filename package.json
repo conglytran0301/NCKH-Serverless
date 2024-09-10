@@ -1,5 +1,5 @@
 {
-  "name": "fcj-serverless-coffee-style",
+  "name": "nckh-serverless",
   "version": "1.0.0",
   "description": "Host a website on any hosting platform with TailwindCSS styling. Configure it to use AWS Cognito, API Gateway, and SNS to send emails when APIs are invoked.",
   "main": "main.js",
