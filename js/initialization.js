@@ -227,7 +227,7 @@ function createProduct() {
             id: 25,
             status: 1, 
             title: 'Dưới Khung Trời Ngát Xanh',
-            img: '',
+            img: 'cccccccccccccccccccccccc',
             category: 'Văn học',
             price: 350000,
             desc: ''
