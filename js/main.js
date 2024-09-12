@@ -332,6 +332,9 @@ function closeSearchMb() {
 
 //Signup && Login Form
 
+
+
+/*
 // Chuyen doi qua lai SignUp & Login 
 let signup = document.querySelector('.signup-link');
 let login = document.querySelector('.login-link');
@@ -666,7 +669,7 @@ function changePassword() {
             }
         }
     }
-}
+}*/
 
 function getProductInfo(id) {
     let products = JSON.parse(localStorage.getItem('products'));
