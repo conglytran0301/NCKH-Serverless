@@ -332,6 +332,18 @@ function closeSearchMb() {
 
 //Signup && Login Form
 
+function displayUserInfo(user) {
+    const usernameElement = document.getElementById('username');
+    const emailElement = document.getElementById('email');
+    
+    usernameElement.textContent = user.username;
+    emailElement.textContent = user.attributes.email;
+  }
+  
+  // Sau khi lấy thông tin từ Auth.currentAuthenticatedUser() hoặc Auth.currentSession()
+  displayUserInfo(user);
+  
+
 
 
 /*
