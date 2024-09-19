@@ -506,7 +506,7 @@ loginButton.addEventListener('click', () => {
             toast({ title: 'Warning', message: 'Sai mật khẩu', type: 'warning', duration: 3000 });
         }
     }
-})
+})*/
 
 // Kiểm tra xem có tài khoản đăng nhập không ?
 function kiemtradangnhap() {
@@ -517,11 +517,11 @@ function kiemtradangnhap() {
             <span class="text-tk">${user.fullname} <i class="fa-sharp fa-solid fa-caret-down"></span>`
         document.querySelector('.header-middle-right-menu').innerHTML = `<li><a href="javascript:;" onclick="myAccount()"><i class="fa-light fa-circle-user"></i> Tài khoản của tôi</a></li>
             <li><a href="javascript:;" onclick="orderHistory()"><i class="fa-regular fa-bags-shopping"></i> Đơn hàng đã mua</a></li>
-            <li class="border"><a id="logout" href="javascript:;"><i class="fa-light fa-right-from-bracket"></i> Thoát tài khoản</a></li>`
+            <li class="border"><a id="logout" href="index.html"><i class="fa-light fa-right-from-bracket"></i> Đăng xuất</a></li>`
         document.querySelector('#logout').addEventListener('click',logOut)
     }
 }
-
+/*
 function logOut() {
     let accounts = JSON.parse(localStorage.getItem('accounts'));
     user = JSON.parse(localStorage.getItem('currentuser'));
